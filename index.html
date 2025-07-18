@@ -89,6 +89,29 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .tech-item {
+            background: rgba(34, 139, 34, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid rgba(34, 139, 34, 0.2);
+            transition: transform 0.2s;
+            color: #228B22;
+        }
+
+        .tech-item:hover {
+            transform: translateY(-2px);
+            background: rgba(34, 139, 34, 0.2);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -199,26 +222,50 @@
         </section>
 
         <section>
+            <h2>Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-item">Python</div>
+                <div class="tech-item">MongoDB</div>
+                <div class="tech-item">MySQL</div>
+                <div class="tech-item">TensorFlow</div>
+                <div class="tech-item">Scikit-learn</div>
+                <div class="tech-item">SciPy</div>
+                <div class="tech-item">Plotly</div>
+                <div class="tech-item">Pandas</div>
+                <div class="tech-item">NumPy</div>
+                <div class="tech-item">MLflow</div>
+                <div class="tech-item">Matplotlib</div>
+                <div class="tech-item">Keras</div>
+                <div class="tech-item">CircleCI</div>
+                <div class="tech-item">Docker</div>
+                <div class="tech-item">Flask</div>
+                <div class="tech-item">Streamlit</div>
+                <div class="tech-item">Git</div>
+                <div class="tech-item">GitHub</div>
+            </div>
+        </section>
+
+        <section>
             <h2>Skills</h2>
             <div class="skills-grid">
-                <div class="skill-item">Python</div>
+                <div class="skill-item">Python Development</div>
                 <div class="skill-item">Data Analysis</div>
                 <div class="skill-item">Machine Learning</div>
-                <div class="skill-item">MLOps</div>
+                <div class="skill-item">MLOps Engineering</div>
                 <div class="skill-item">Deep Learning</div>
                 <div class="skill-item">Neural Networks</div>
                 <div class="skill-item">NLP</div>
-                <div class="skill-item">Docker</div>
-                <div class="skill-item">MLflow</div>
-                <div class="skill-item">Streamlit</div>
-                <div class="skill-item">Flask</div>
-                <div class="skill-item">Git</div>
-                <div class="skill-item">GitHub</div>
-                <div class="skill-item">CircleCI</div>
-                <div class="skill-item">TensorFlow</div>
-                <div class="skill-item">MySQL</div>
-                <div class="skill-item">MongoDB</div>
+                <div class="skill-item">Data Visualization</div>
                 <div class="skill-item">Tableau</div>
+                <div class="skill-item">CI/CD Pipelines</div>
+                <div class="skill-item">Model Deployment</div>
+                <div class="skill-item">API Development</div>
+                <div class="skill-item">Database Management</div>
+                <div class="skill-item">Data Engineering</div>
+                <div class="skill-item">Statistical Analysis</div>
+                <div class="skill-item">Model Optimization</div>
+                <div class="skill-item">Cloud Computing</div>
+                <div class="skill-item">Version Control</div>
             </div>
         </section>
 
