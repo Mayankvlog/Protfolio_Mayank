@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank - Machine Learning Engineer & AI Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333; /* Darker text for better readability on white */
+            background-color: #ffffff; /* White background */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #228B22, #32CD32); /* Leaf green gradient */
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        section {
+            background: rgba(34, 139, 34, 0.1); /* Light leaf green background */
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        h2 {
+            color: #228B22; /* Leaf green */
+            margin-bottom: 20px;
+            border-bottom: 2px solid #228B22;
+            padding-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: rgba(34, 139, 34, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid rgba(34, 139, 34, 0.2);
+            transition: transform 0.2s;
+            color: #228B22;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-2px);
+            background: rgba(34, 139, 34, 0.2);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .tech-item {
+            background: rgba(34, 139, 34, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            border: 1px solid rgba(34, 139, 34, 0.2);
+            transition: transform 0.2s;
+            color: #228B22;
+        }
+
+        .tech-item:hover {
+            transform: translateY(-2px);
+            background: rgba(34, 139, 34, 0.2);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: rgba(34, 139, 34, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(34, 139, 34, 0.2);
+            transition: transform 0.2s;
+            color: #333;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            background: rgba(34, 139, 34, 0.2);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .project-card h3 {
+            color: #228B22;
+            margin-bottom: 10px;
+        }
+
+        .project-card a {
+            color: #228B22;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: 500;
+            border-bottom: 1px solid rgba(34, 139, 34, 0.5);
+        }
+
+        .project-card a:hover {
+            border-bottom-color: #228B22;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-item {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 20px;
+            background: rgba(34, 139, 34, 0.1);
+            border-radius: 8px;
+            border: 1px solid rgba(34, 139, 34, 0.2);
+            transition: transform 0.2s;
+            color: #333;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+            background: rgba(34, 139, 34, 0.2);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-item a {
+            color: #228B22;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(34, 139, 34, 0.5);
+        }
+
+        .contact-item a:hover {
+            border-bottom-color: #228B22;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            header {
+                padding: 40px 0;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEcHohOkf7M0A/profile-displayphoto-crop_800_800/B4DZebgkjGHMAI-/0/1750660698683?e=1758153600&v=beta&t=_gJ1Dub2GYy2uHI2lX5BzljRZDBbSZuvz1Eap5WdTFs" alt="Mayank" class="profile-image">
+            <h1>Mayank</h1>
+            <p>Machine Learning Engineer & AI Developer</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>I'm a passionate Machine Learning Engineer and AI Developer skilled in Python, Machine Learning, Deep Learning, and Neural Networks. With hands-on experience in real-world projects and internships, I specialize in NLP, data visualization, and intelligent system design. I enjoy transforming data into insights and building AI-driven solutions that deliver real impact.</p>
+        </section>
+
+        <section>
+            <h2>Tech Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-item">Python</div>
+                <div class="tech-item">MongoDB</div>
+                <div class="tech-item">MySQL</div>
+                <div class="tech-item">TensorFlow</div>
+                <div class="tech-item">Scikit-learn</div>
+                <div class="tech-item">SciPy</div>
+                <div class="tech-item">Plotly</div>
+                <div class="tech-item">Pandas</div>
+                <div class="tech-item">NumPy</div>
+                <div class="tech-item">MLflow</div>
+                <div class="tech-item">Matplotlib</div>
+                <div class="tech-item">Seaborn</div>
+                <div class="tech-item">Nltk</div>
+                <div class="tech-item">Spacy</div>
+                <div class="tech-item">Keras</div>
+                <div class="tech-item">Pickle</div>
+                <div class="tech-item">CircleCI</div>
+                <div class="tech-item">DVC</div>
+                <div class="tech-item">Docker</div>
+                <div class="tech-item">Flask</div>
+                <div class="tech-item">Streamlit</div>
+                <div class="tech-item">Git</div>
+                <div class="tech-item">GitHub</div>
+                <div class="tech-item">Dagshub</div>
+                <div class="tech-item">Tableau</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Python Development</div>
+                <div class="skill-item">Data Analyst</div>
+                <div class="skill-item">Machine Learning</div>
+                <div class="skill-item">MLOps</div>
+                <div class="skill-item">Deep Learning</div>
+                <div class="skill-item">Neural Networks</div>
+                <div class="skill-item">NLP</div>
+                <div class="skill-item">Data Visualization</div>
+                <div class="skill-item">CI/CD Pipelines</div>
+                <div class="skill-item">Database Management</div>
+                <div class="skill-item">Version Control</div>
+                <div class="skill-item">Model Deployment</div>
+                <div class="skill-item">Statistical Analysis</div>
+            </div>
+        </section>
+
+        <!-- Removed the entire Model Deployment section -->
+
+        <section>
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Banking MLOps Project</h3>
+                    <p>A Streamlit application for predicting term deposit subscriptions using various ML models with MLflow integration and Docker deployment.</p>
+                    <a href="https://github.com/Mayankvlog/Bank_mlops" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Adidas Sales Forecast</h3>
+                    <p>Sales prediction application with MLflow integration, featuring multiple classifiers and interactive visualizations.</p>
+                    <a href="https://github.com/Mayankvlog/Adidas_mlops.git" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Toyota Price Prediction</h3>
+                    <p>MLOps-enabled application for predicting Toyota vehicle prices with various ML models and comprehensive visualizations.</p>
+                    <a href="https://github.com/Mayankvlog/Toyota_mlops.git" target="_blank">View Project →</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Resume/CV</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>View My Resume</h3>
+                    <p>Check out my detailed professional experience and qualifications</p>
+                    <a href="https://www.linkedin.com/jobs/application-settings/?hideTitle=true" target="_blank">Download Resume →</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:mayank.kr0311@gmail.com">mayank.kr0311@gmail.com</a></p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/Mayankvlog" target="_blank">github.com/Mayankvlog</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/mayank344/" target="_blank">linkedin.com/in/mayank344</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
